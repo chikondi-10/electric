@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  background-color: whitesmoke;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container h1 {
+  display: flex;
+  align-items: center;
+  color: brown;
+  text-transform: uppercase;
+  font-family: "Moon Dance", serif;
+}
+header .container h1 img {
+  width: 40px;
+  height: 40px;
+}
+header .container nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-weight: lighter;
+}
+header .container nav ul li a:hover {
+  color: green;
+}
+
+.hero {
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+.hero .container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.hero .container .hero-content,
+.hero .container .slider {
+  width: 50%;
+}
+.hero .container .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .container .hero-content h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+  font-family: "Dancing Script", serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.hero .container .hero-content p {
+  font-family: "Moon dance", serif;
+  font-size: 1.6em;
+  font-weight: lighter;
+  line-height: 20px;
+}
+.hero .container .hero-content input[type=button] {
+  width: 200px;
+  border: none;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 0 10px 0 10px;
+}
+.hero .container .slider img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid brown;
+}
+
+.service {
+  padding: 50px 0;
+}
+.service .service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.service .service-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3em;
+  font-family: "Moon Dance", serif;
+  font-weight: lighter;
+}
+.service .service-content h3 img {
+  width: 40px;
+  height: 40px;
+}
+.service .service-content input[type=button] {
+  width: 200px;
+  border: none;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 0 10px 0 10px;
+}
+.service .service-content .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.service .service-content .services .box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 50px 25px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(35.333% - 20px);
+  max-width: 350px;
+}
+.service .service-content .services .box:hover {
+  border-bottom: 5px solid green;
+}
+
+.about {
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+.about .about-content {
+  display: flex;
+  gap: 20px;
+}
+.about .about-content .box {
+  width: 50%;
+  height: 60vh;
+}
+.about .about-content .box:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.about .about-content .box:nth-child(1) h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3em;
+  font-family: "Moon Dance", serif;
+  font-weight: lighter;
+}
+.about .about-content .box:nth-child(1) h3 img {
+  width: 40px;
+  height: 40px;
+}
+.about .about-content .box:nth-child(1) input[type=button] {
+  width: 200px;
+  border: none;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 0 10px 0 10px;
+}
+.about .about-content .box:nth-child(2) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.about .about-content .box:nth-child(2) img:nth-child(1) {
+  width: 400px;
+  height: 400px;
+}
+.about .about-content .box:nth-child(2) img:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.about .about-content .box:nth-child(2) img {
+  border-radius: 50%;
+  border: 5px solid brown;
+}
+
+.blog {
+  padding: 50px 0;
+}
+.blog .blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog .blog-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3em;
+  font-family: "Moon Dance", serif;
+  font-weight: lighter;
+}
+.blog .blog-content h3 img {
+  width: 40px;
+  height: 40px;
+}
+.blog .blog-content .blog-box {
+  display: flex;
+  gap: 20px;
+}
+.blog .blog-content .blog-box .box {
+  width: 50%;
+  box-shadow: 2px 2px 1px 1px rgb(78, 68, 68);
+}
+.blog .blog-content .blog-box .box img {
+  width: 100%;
+}
+.blog .blog-content .blog-box .box h4 {
+  padding: 50px 50px 0 50px;
+}
+.blog .blog-content .blog-box .box p {
+  padding: 0 50px 50px 50px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact .contact-content {
+  display: flex;
+}
+.contact .contact-content .box {
+  width: 100%;
+}
+.contact .contact-content .box h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3em;
+  font-family: "Moon Dance", serif;
+  font-weight: lighter;
+}
+.contact .contact-content .box h4 img {
+  width: 40px;
+  height: 40px;
+}
+.contact .contact-content .box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .contact-content .box form input[type=text] {
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 2px 3px rgb(133, 93, 93);
+}
+.contact .contact-content .box form input[type=button] {
+  width: 200px;
+  border: none;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 0 10px 0 10px;
+}
+.contact .contact-content .box form textarea {
+  height: 20vh;
+  border: none;
+  box-shadow: 1px 2px 3px rgb(133, 93, 93);
+}
+
+/*# sourceMappingURL=style.css.map */
